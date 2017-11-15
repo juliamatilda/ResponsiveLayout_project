@@ -1,15 +1,50 @@
 * {
 	box-sizing: border-box;
+
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
+  color: #4a4a4a;
+  margin:0 auto;
 }
 
+.main-header {
+  background-color: #fafafa;
 
+}
 
+.presentation {
+  padding-bottom: 20px;
+}
 
+.presentation-text {
+  width:80%;
+  margin: auto;
+}
 
+.presentation-image {
+  width:50%;
+}
+
+.wrapper {
+  text-align: center;
+  
+}
+
+li {
+ list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 20px;
+}
 
 
 
