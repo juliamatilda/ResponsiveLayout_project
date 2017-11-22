@@ -23,8 +23,7 @@ p {
 h1 {
   margin: 0;
   padding: 20px 0;
-	font-size: 1.6
-	em;
+	font-size: 1.6em;
 }
 
 .presentation-text {
@@ -65,8 +64,20 @@ a {
 
 }
 /*-----------------------------------------*/
+/*----MAIN-----------*/
 
+h2 {
+	font-size: 1em;
+}
 
+.portfolio {
+	margin:50px 0;
+}
+
+.portfolio-img {
+	width: 90%;
+	margin: 40px 0;
+}
 
 
 
