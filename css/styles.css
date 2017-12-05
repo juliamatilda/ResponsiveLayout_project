@@ -16,7 +16,7 @@ body {
   background-color: #fafafa;
 }
 
-p {
+.presentation-text {
 	color: #8a8a8a;
 }
 
@@ -70,18 +70,44 @@ h2 {
 	font-size: 1em;
 }
 
+h2:last-of-type {
+	padding:50px 0 20px 0;
+}
+
+h3 {
+	font-weight: 400;
+	color:black;
+}
+
 .portfolio {
 	margin:50px 0;
 }
 
 .portfolio-img {
 	width: 90%;
-	margin: 40px 0;
+	margin: 40px 0 5px 0;
 }
 
 
+.portfolio-text {
+	color:#5d5d5d;
+	width: 90%;
+	margin: auto;
+}
 
 
+/*----FOOTER-----------*/
+
+.contact {
+	background-color: #fafafa;
+}
+
+.footer-text {
+	width: 90%;
+	color: #8a8a8a;
+	margin: auto;
+	padding-bottom: 20px;
+}
 
 
 
