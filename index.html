@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Layout</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">  </head>
-  <body>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"><body>
     <div class="wrapper">
 
       <header class="main-header">
@@ -15,9 +14,9 @@
 
         <nav class="main-nav">
           <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a class="nav-link" href="index.html">HOME</a></li>
+            <li><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+            <li><a class="nav-link" href="#contact">CONTACT</a></li>
           </ul>
         </nav>
 
@@ -65,12 +64,22 @@
         </div>
         <!--end portfolio -->
           </main>
-        <footer class="contact">
+        <footer class="main-footer">
+
+        <div class="contact">
           <h2>CONTACT</h2>
-          <p class="footer-text">If you're interested in chatting or want more information about what
+          <p class="contact-text">If you're interested in chatting or want more information about what
             I've been working on, I'd love to hear from you!</p>
-          <p>Phone  <strong>+1 (111) 555-1234</strong></p>
-          <p>Email  <strong>email@yoursite.com</strong></p>
+          <p class="contact-info">Phone <span class="contact-style"> +1 (111) 555-1234</span></p>
+          <p class="contact-info">Email <span class="contact-style"> email@yoursite.com</span></p>
+        </div>
+
+        <div class="horizontal"></div>
+
+        <div class="footer-content clearfix">
+          <p class="footer-name">Julia Lindholm</p>
+          <a class="top-link" href="#name">BACK TO TOP</a>
+        </div>
 
         </footer>
 
