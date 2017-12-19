@@ -74,22 +74,21 @@ a {
 /*-----------------------------------------*/
 /*----MAIN-----------*/
 
+main {
+	padding-bottom: 50px;
+}
+
 h2 {
 	font-size: .85em;
 	color: #4a4a4a;
 }
 
-h2:last-of-type {
-	padding:50px 0 20px 0;
+.portfolio-title {
+	padding-top:30px;
 }
 
 h3 {
 	font-weight: 400;
-
-}
-
-.portfolio {
-	margin:50px 0;
 }
 
 .portfolio-img {
@@ -124,6 +123,10 @@ h3 {
 	font-weight: 400;
 	padding-left: 6px;
 	color: #7f7f7f;
+}
+
+.contact-title {
+	padding: 40px 0 20px 0;
 }
 
 .horizontal {
@@ -165,6 +168,61 @@ h3 {
 
 @media (min-width: 768px) {
 
+	h1.name {
+		padding-top: 40px;
+		padding-bottom: 10px;
+	}
+
+	.presentation {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		padding-bottom: 60px;
+		}
+
+	.presentation-text {
+	  display: inline-block;
+		width: 52%;
+		margin: 0;
+		text-align: left;
+		margin-left: 25px;
+		font-size: 1.2em;
+		}
+
+	.presentation-image {
+	  display: inline-block;
+		margin: 0;
+		margin-right: 25px;
+		/* padding-left: 20px; */
+		width: 38%;
+		height: 100%;
+		order: 1;
+	}
+
+	/*navigation*/
+ .main-nav {
+	 padding: 0 40px 30px 40px;
+
+ }
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		width: 50%;
+		margin: auto;
+	}
+
+li {
+	 display: inline-block;
+	 background-color: #fafafa;
+	 font-size: 0.9em;
+
+	}
+
+ /*----MAIN----*/
+	.portfolio {
+		margin:0;
+	}
 
 
 }
