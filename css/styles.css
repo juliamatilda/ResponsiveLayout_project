@@ -1,15 +1,14 @@
 * {
 	box-sizing: border-box;
-
 }
 
 body {
+	margin: 0 auto;
   color: #4a4a4a;
-  margin:0 auto;
-	width: 100%;
+  width: 100%;
 	text-align: center;
 	font-family: 'Open sans', sans-serif;
-
+	background-color: #fafafa;
 }
 
 p {
@@ -17,9 +16,6 @@ p {
 }
 
 /*----HEADER-----------*/
-.main-header {
-  background-color: #fafafa;
-}
 
 .presentation-text,
 .contact {
@@ -27,13 +23,13 @@ p {
 }
 
 h1 {
-  margin: 0;
-  padding: 20px 0;
+  margin: 0 auto;
+	padding: 30px 0;
 	font-size: 1.6em;
 }
 
 .presentation-text {
-  width:90%;
+  width:88%;
   margin: auto;
 	padding-bottom: 40px;
 	}
@@ -45,17 +41,20 @@ h1 {
 
 /*navigation*/
 
-ul {
+.main-ul {
 	padding:0;
 	margin: 0;
 	}
 
-ul:last-child {
+.main-ul:last-child {
 	margin-bottom:20px;
 }
 
 li {
- list-style: none;
+	list-style: none;
+}
+
+.main-list {
  background-color: white;
  padding: 10px 0;
  margin:5px auto;
@@ -68,7 +67,7 @@ a {
 	color: #4a4a4a;
 }
 
-.nav-link {
+.main-link {
 	font-weight: 700;
 }
 
@@ -76,6 +75,7 @@ a {
 /*----MAIN-----------*/
 
 main {
+	background-color: white;
 	padding-bottom: 50px;
 }
 
@@ -89,7 +89,7 @@ h3 {
 }
 
 .portfolio-title {
-	padding-top:30px;
+	padding-top:50px;
 }
 
 .portfolio-img,
@@ -156,7 +156,7 @@ h3 {
 
 	}
 
-	.footer-nav {
+.footer-nav {
 		display: none;
 	}
 
@@ -174,7 +174,8 @@ h3 {
 	h1.name {
 		padding-top: 40px;
 		padding-bottom: 10px;
-	}
+		font-size: 1.5em;
+		}
 
 	.presentation {
 		display: flex;
@@ -183,9 +184,16 @@ h3 {
 		padding-bottom: 60px;
 		}
 
+	.presentation-text,
+	.portfolio-text,
+	.contact-text	{
+		word-spacing: 0.8px;
+		letter-spacing: 0.2px;
+	}
+
 	.presentation-text {
 	  display: inline-block;
-		width: 52%;
+		width: 53%;
 		margin: 0;
 		text-align: left;
 		margin-left: 25px;
@@ -207,14 +215,14 @@ h3 {
 
  }
 
-	ul {
+	.main-ul {
 		display: flex;
 		flex-direction: row;
 		width: 50%;
 		margin: auto;
 	}
 
-li {
+	.main-list {
 	 display: inline-block;
 	 background-color: #fafafa;
 	 font-size: 0.9em;
@@ -248,10 +256,11 @@ li {
 	.portfolio-text {
 		width:80%;
 		font-size: 0.95em;
-	}
+		}
 
+	/* footer */
 	.contact-text {
-		width: 55%;
+		width: 60%;
 	}
 
 	.top-link {
@@ -259,10 +268,18 @@ li {
 	}
 
 	.footer-nav {
-
+		display: inline-block;
+		background-color:#fafafa;
 	}
 
-}
+	.footer-nav-list {
+		display: inline-block;
+		padding-right: 30px;
+		font-size: .9em;
+		font-weight: 700;
+	}
+
+
 
 @media (min-width: 1024px) {
 
