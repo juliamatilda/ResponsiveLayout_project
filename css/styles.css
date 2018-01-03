@@ -189,6 +189,7 @@ h3 {
 	.contact-text	{
 		word-spacing: 0.8px;
 		letter-spacing: 0.2px;
+		line-height: 1.4em;
 	}
 
 	.presentation-text {
@@ -270,6 +271,7 @@ h3 {
 	.footer-nav {
 		display: inline-block;
 		background-color:#fafafa;
+		margin-bottom: 40px;
 	}
 
 	.footer-nav-list {
@@ -279,8 +281,88 @@ h3 {
 		font-weight: 700;
 	}
 
+	.horizontal {
+		margin-bottom: 10px;
+	}
+
 
 
 @media (min-width: 1024px) {
+
+	.desktop-menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	h1.name {
+		margin: 50px 0 0 50px;
+		padding: 0;
+		font-size: 1.4em;
+	}
+
+	.main-nav {
+		margin: 50px 40px 0 0;
+	}
+
+	.main-list {
+		padding:0 40px 0 0;
+	}
+
+	.presentation-text {
+	  width: 48%;
+		}
+
+	.presentation-image {
+	  width: 37%;
+		}
+
+/* MAIN */
+
+main {
+	background-color: #fafafa;
+
+}
+
+.main-content {
+	background-color: white;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.portfolio-section {
+	width: 29%;
+	margin: 0
+
+}
+
+
+.portfolio-img {
+	width:100%;
+	}
+
+.portfolio-text {
+	width:80%;
+	font-size: 0.95em;
+	}
+
+	.portfolio-section:nth-of-type(odd) {
+		margin-left:0;
+	}
+
+	.portfolio-section:nth-of-type(even) {
+		margin-right:0;
+	}
+
+	.portfolio-section:nth-of-type(3n+2) {
+		margin-right:-80px;
+		margin-left: -80px;
+	}
+
+	.portfolio-section:nth-of-type(1) {
+		padding-left: -10px;
+	}
+
+
 
 }
