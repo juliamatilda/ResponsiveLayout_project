@@ -15,7 +15,15 @@ p {
 	font-weight: 300;
 }
 
-/*----HEADER-----------*/
+/*---HEADER-----------*/
+
+.presentation-text,
+.portfolio-text,
+.contact-text	{
+	word-spacing: .5px;
+	letter-spacing: .3px;
+	line-height: 1.4em;
+}
 
 .presentation-text,
 .contact {
@@ -32,6 +40,7 @@ h1 {
   width:88%;
   margin: auto;
 	padding-bottom: 40px;
+	font-size: 1.2em;
 	}
 
 .presentation-image {
@@ -39,7 +48,7 @@ h1 {
 	margin: 20px 0;
 }
 
-/*navigation*/
+/*---NAVIGATION-----*/
 
 .main-ul {
 	padding:0;
@@ -56,8 +65,8 @@ li {
 
 .main-list {
  background-color: white;
- padding: 10px 0;
- margin:5px auto;
+ padding: 15px 0;
+ margin:6px auto;
  width: 90%;
  }
 
@@ -71,7 +80,6 @@ a {
 	font-weight: 700;
 }
 
-/*-----------------------------------------*/
 /*----MAIN-----------*/
 
 main {
@@ -80,11 +88,12 @@ main {
 }
 
 h2 {
-	font-size: .85em;
+	font-size: 1em;
 	color: #4a4a4a;
 }
 
 h3 {
+	font-size: 1.3em;
 	font-weight: 400;
 }
 
@@ -104,40 +113,43 @@ h3 {
 .portfolio-text {
 	color:#5d5d5d;
 	margin: auto;
+	font-size: 1.1em;
 }
 
 
-/*--------------------------*/
+/*---FOOTER-------*/
 
 .main-footer {
-	position: absolute;
+	/* position: absolute; */
 	background-color: #fafafa;
 	padding-bottom: 20px;
 }
 
+.contact-title {
+	padding: 50px 0 30px 0;
+}
 
 .contact-text {
 	width: 90%;
 	margin: auto;
+	font-size: 1.2em;
 	padding-bottom: 20px;
 }
 
+.contact-info {
+	font-size: 1.2em;
+}
+
 .contact-style {
-	font-weight: 400;
+	font-weight: 600;
 	padding-left: 6px;
 	color: #7f7f7f;
 }
 
-.contact-title {
-	padding: 40px 0 20px 0;
-}
-
 .horizontal {
-	width: 90%;
-	margin: auto;
-	margin-bottom: 20px;
-	padding-top: 40px;
-	border-bottom: 1px solid #ececec;
+	margin: 0 20px 15px 20px;
+	padding:40px 10px 0 10px;
+	border-bottom: 1.5px solid #ececec;
 }
 
 .footer-content {
@@ -151,7 +163,7 @@ h3 {
 .footer-name {
 	display: inline-block;
 	font-weight: 700;
-	font-size: .9em;
+	font-size: 1.1em;
 	padding-left: 20px;
 
 	}
@@ -163,11 +175,11 @@ h3 {
 .top-link  {
 	display: inline-block;
 	font-weight: 700;
-	font-size: .75em;
+	font-size: .9em;
 	padding-right: 20px;
 	}
 
-/*Media queries*/
+/*-----------Media queries------------------------------*/
 
 @media (min-width: 768px) {
 
@@ -184,33 +196,25 @@ h3 {
 		padding-bottom: 60px;
 		}
 
-	.presentation-text,
-	.portfolio-text,
-	.contact-text	{
-		word-spacing: 0.8px;
-		letter-spacing: 0.2px;
-		line-height: 1.4em;
-	}
 
 	.presentation-text {
 	  display: inline-block;
 		width: 53%;
-		margin: 0;
 		text-align: left;
-		margin-left: 25px;
+		margin:0 0 0 25px;
 		font-size: 1.2em;
+
 		}
 
 	.presentation-image {
 	  display: inline-block;
-		margin: 0;
-		margin-right: 25px;
+		margin:0 25px 0 0;
 		width: 38%;
 		height: 100%;
 		order: 1;
 	}
 
-	/*navigation*/
+	/*--navigation/tablet--*/
  .main-nav {
 	 padding: 0 40px 30px 40px;
 
@@ -230,7 +234,7 @@ h3 {
 
 	}
 
- /*----MAIN----*/
+ /*--main/tablet--*/
 
 	.portfolio {
 		display: flex;
@@ -256,10 +260,10 @@ h3 {
 
 	.portfolio-text {
 		width:80%;
-		font-size: 0.95em;
+		font-size: 0.9em;
 		}
 
-	/* footer */
+	/*--footer/tablet--*/
 	.contact-text {
 		width: 60%;
 	}
@@ -289,35 +293,46 @@ h3 {
 
 @media (min-width: 1024px) {
 
+	h1.name {
+		margin: 50px 0 0 70px;
+		padding:0;
+	}
+
+	.presentation {
+		justify-content: space-between;
+		margin: 0 40px 0 40px;
+		}
+
+	.presentation-text  {
+		width: 53%;
+		font-size: 1.2em;
+		}
+
+	.presentation-image {
+	  width: 39%;
+		}
+
+/*--navigation/desktop--*/
+
 	.desktop-menu {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-	}
-
-	h1.name {
-		margin: 50px 0 0 50px;
-		padding: 0;
-		font-size: 1.4em;
-	}
+		}
 
 	.main-nav {
 		margin: 50px 40px 0 0;
+		}
+
+	.main-ul {
+		padding: 0 35px 0 0;
 	}
 
 	.main-list {
 		padding:0 40px 0 0;
-	}
-
-	.presentation-text {
-	  width: 48%;
 		}
 
-	.presentation-image {
-	  width: 37%;
-		}
-
-/* MAIN */
+/*--main/desktop--*/
 
 main {
 	background-color: #fafafa;
@@ -326,24 +341,31 @@ main {
 
 .main-content {
 	background-color: white;
-	margin-left: 10px;
-	margin-right: 10px;
+	width:95%;
+	margin: 0 auto;
+}
+
+.portfolio {
+	width:95%;
+	margin: 0 auto;
+	padding-bottom: 60px;
+}
+
+.portfolio-title {
+	font-size: 0.9em;
 }
 
 .portfolio-section {
-	width: 29%;
-	margin: 0
-
+	width: 31.5%;
+	margin: 0;
 }
-
 
 .portfolio-img {
 	width:100%;
 	}
 
 .portfolio-text {
-	width:80%;
-	font-size: 0.95em;
+	width:93%;
 	}
 
 	.portfolio-section:nth-of-type(odd) {
@@ -354,15 +376,22 @@ main {
 		margin-right:0;
 	}
 
-	.portfolio-section:nth-of-type(3n+2) {
-		margin-right:-80px;
-		margin-left: -80px;
+/*--footer/desktop--*/
+
+	.contact-title {
+		/* font-size: 1em; */
 	}
 
-	.portfolio-section:nth-of-type(1) {
-		padding-left: -10px;
+	.contact-text {
+		width: 55%;
+		font-size: 1.3em;
 	}
 
+	.contact-info {
+		font-size: 1.3em;
+	}
 
-
-}
+	.contact-style {
+		font-weight: 700;
+	}
+/*marginal i presentation, vänster  */
