@@ -15,6 +15,10 @@ p {
 	font-weight: 300;
 }
 
+.white-bg {
+	background-color: white;
+}
+
 /*---HEADER-----------*/
 
 .presentation-text,
@@ -34,6 +38,8 @@ h1 {
   margin: 0 auto;
 	padding: 30px 0;
 	font-size: 1.6em;
+	font-family: 'Sarina', cursive;
+
 }
 
 .presentation-text {
@@ -97,6 +103,10 @@ h3 {
 	font-weight: 400;
 }
 
+.portfolio {
+	padding-bottom: 20px;
+}
+
 .portfolio-title {
 	padding-top:50px;
 }
@@ -114,6 +124,34 @@ h3 {
 	color:#5d5d5d;
 	margin: auto;
 	font-size: 1.1em;
+}
+
+
+.skills-title {
+	padding: 40px 0 20px 0;
+}
+
+.skill-list {
+	padding-left: 0;
+	width:90%;
+	margin: auto;
+}
+
+.skill {
+	display: inline-block;
+	background-color: #a2c3d3;
+	border: .5px dotted #a2c3d3;
+	border-radius: 5px 20px 5px;
+	padding: 20px;
+	margin: 10px;
+	color:#1e97cc;
+	font-family: 'Oxygen Mono', cursive;
+	font-size: 1.1em;
+}
+
+.skill:nth-of-type(even) {
+	background-color: #1e97cc;
+	color: #a2c3d3;
 }
 
 
@@ -159,6 +197,7 @@ h3 {
 }
 
 .footer-name {
+	font-family: 'Sarina', cursive;
 	display: inline-block;
 	font-weight: 700;
 	font-size: 1.1em;
@@ -184,7 +223,7 @@ h3 {
 	h1.name {
 		padding-top: 40px;
 		padding-bottom: 0;
-		font-size: 1.5em;
+		font-size: 1.7em;
 		}
 
 	.presentation {
@@ -210,6 +249,8 @@ h3 {
 		width: 37%;
 		height: 100%;
 		order: 1;
+		padding-top: 6px;
+
 	}
 
 	/*--navigation/tablet--*/
@@ -270,6 +311,11 @@ h3 {
 		font-size: 0.9em;
 		}
 
+	.skill-list {
+		width:80%;
+	}
+
+
 	/*--footer/tablet--*/
 	.contact-text {
 		width: 70%;
@@ -310,7 +356,6 @@ h3 {
 	h1.name {
 		margin: 50px 0 0 70px;
 		padding:0;
-		font-size: 1.7em;
 		}
 
 	.presentation {
@@ -325,7 +370,6 @@ h3 {
 
 	.presentation-image {
 	  width: 39%;
-		padding-top: 6px;
 		}
 
 /*--navigation/desktop--*/
