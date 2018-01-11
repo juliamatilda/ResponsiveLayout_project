@@ -120,7 +120,6 @@ h3 {
 /*---FOOTER-------*/
 
 .main-footer {
-	/* position: absolute; */
 	background-color: #fafafa;
 	padding-bottom: 20px;
 }
@@ -149,11 +148,10 @@ h3 {
 .horizontal {
 	margin: 0 20px 15px 20px;
 	padding:40px 10px 0 10px;
-	border-bottom: 1.5px solid #ececec;
+	border-bottom: 1.4px solid #ececec;
 }
 
 .footer-content {
-	position: relative;
 	display: flex;
 	flex-direction: row;
 	align-items: baseline;
@@ -185,7 +183,7 @@ h3 {
 
 	h1.name {
 		padding-top: 40px;
-		padding-bottom: 10px;
+		padding-bottom: 0;
 		font-size: 1.5em;
 		}
 
@@ -193,7 +191,7 @@ h3 {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
-		padding-bottom: 60px;
+		padding-bottom: 50px;
 		}
 
 
@@ -209,14 +207,14 @@ h3 {
 	.presentation-image {
 	  display: inline-block;
 		margin:0 25px 0 0;
-		width: 38%;
+		width: 37%;
 		height: 100%;
 		order: 1;
 	}
 
 	/*--navigation/tablet--*/
  .main-nav {
-	 padding: 0 40px 30px 40px;
+	 padding: 0 40px 20px 40px;
 
  }
 
@@ -236,11 +234,20 @@ h3 {
 
  /*--main/tablet--*/
 
+ h2 {
+	 font-size: .9em;
+	}
+
+ h3 {
+	 font-size: 1.1em;
+	}
+
 	.portfolio {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-around;
 	}
+
 
 	.portfolio-section:nth-of-type(odd) {
 		margin-left:25px;
@@ -265,17 +272,24 @@ h3 {
 
 	/*--footer/tablet--*/
 	.contact-text {
-		width: 60%;
-	}
+		width: 70%;
+		padding-bottom:30px;
+		}
 
 	.top-link {
 		display: none;
+	}
+
+	.footer-name {
+		font-size: 1em;
+		padding-left: 30px;
 	}
 
 	.footer-nav {
 		display: inline-block;
 		background-color:#fafafa;
 		margin-bottom: 40px;
+		font-size: .9em;
 	}
 
 	.footer-nav-list {
@@ -286,7 +300,7 @@ h3 {
 	}
 
 	.horizontal {
-		margin-bottom: 10px;
+		margin: 0 30px 10px 30px;
 	}
 
 
@@ -296,20 +310,22 @@ h3 {
 	h1.name {
 		margin: 50px 0 0 70px;
 		padding:0;
-	}
+		font-size: 1.7em;
+		}
 
 	.presentation {
 		justify-content: space-between;
-		margin: 0 40px 0 40px;
+		margin: 10px 40px 0 40px;
 		}
 
 	.presentation-text  {
 		width: 53%;
-		font-size: 1.2em;
+		font-size: 1.3em;
 		}
 
 	.presentation-image {
 	  width: 39%;
+		padding-top: 6px;
 		}
 
 /*--navigation/desktop--*/
@@ -318,6 +334,7 @@ h3 {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		align-items: baseline;
 		}
 
 	.main-nav {
@@ -351,8 +368,12 @@ main {
 	padding-bottom: 60px;
 }
 
-.portfolio-title {
-	font-size: 0.9em;
+h2.portfolio-title {
+	padding:65px 0 10px 0;
+}
+
+h3 {
+ font-size: 1.2em;
 }
 
 .portfolio-section {
@@ -362,25 +383,30 @@ main {
 
 .portfolio-img {
 	width:100%;
-	}
+}
 
 .portfolio-text {
 	width:93%;
-	}
+	font-size: 1em;
+}
 
-	.portfolio-section:nth-of-type(odd) {
+.portfolio-section:nth-of-type(odd) {
 		margin-left:0;
-	}
+}
 
-	.portfolio-section:nth-of-type(even) {
+.portfolio-section:nth-of-type(even) {
 		margin-right:0;
-	}
+}
 
 /*--footer/desktop--*/
 
-	.contact-title {
-		/* font-size: 1em; */
-	}
+ .main-footer {
+	 padding-bottom:0;
+ }
+
+ .contact-title {
+	padding: 5px 0 30px 0;
+ }
 
 	.contact-text {
 		width: 55%;
@@ -394,4 +420,20 @@ main {
 	.contact-style {
 		font-weight: 700;
 	}
-/*marginal i presentation, vänster  */
+
+	.horizontal {
+		padding:60px 10px 0 10px;
+		margin: 0 70px 10px 70px;
+	}
+
+	.footer-content {
+		margin:15px 40px 0 40px;
+	}
+
+	.footer-name {
+		font-size: 0.95em;
+	}
+
+	.footer-nav {
+		margin-bottom: 20px;
+	}
