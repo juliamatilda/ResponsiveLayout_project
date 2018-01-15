@@ -15,10 +15,6 @@ p {
 	font-weight: 300;
 }
 
-.white-bg {
-	background-color: white;
-}
-
 /*---HEADER-----------*/
 
 .presentation-text,
@@ -180,6 +176,10 @@ h3 {
 .contact-style {
 	font-weight: 600;
 	padding-left: 6px;
+	color: #7f7f7f;
+}
+
+.contact-link {
 	color: #7f7f7f;
 }
 
@@ -349,9 +349,16 @@ h3 {
 		margin: 0 30px 10px 30px;
 	}
 
+}
 
 
 @media (min-width: 1024px) {
+
+.nav-link:active,
+.nav-link:hover {
+	color:#808080;
+	transition: all 0.3s ease 0s;
+	}
 
 	h1.name {
 		margin: 50px 0 0 70px;
@@ -397,10 +404,14 @@ h3 {
 
 main {
 	background-color: #fafafa;
-
 }
 
-.main-content {
+.h-main {
+	display: none;
+}
+
+.main-content,
+.skills {
 	background-color: white;
 	width:95%;
 	margin: 0 auto;
@@ -442,13 +453,18 @@ h3 {
 		margin-right:0;
 }
 
+.skills {
+	padding:inherit;
+	margin-top: 20px;
+}
+
 /*--footer/desktop--*/
 
  .main-footer {
 	 padding-bottom:0;
  }
 
- .contact-title {
+	.contact-title {
 	padding: 5px 0 30px 0;
  }
 
@@ -465,11 +481,6 @@ h3 {
 		font-weight: 700;
 	}
 
-	.horizontal {
-		padding:60px 10px 0 10px;
-		margin: 0 70px 10px 70px;
-	}
-
 	.footer-content {
 		margin:15px 40px 0 40px;
 	}
@@ -481,3 +492,5 @@ h3 {
 	.footer-nav {
 		margin-bottom: 20px;
 	}
+
+}
